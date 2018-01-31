@@ -32,11 +32,12 @@ module.exports = function (router) {
     })
     .put(bodyParser, (req, res) => {
       debug(`${req.method}: ${req.url}`);
+      debug(`${req.body}`);
 
-      Animal.findByIdAndUpdate(req.params._id, {legs: 2})
+      Animal.findByIdAndUpdate(req.params._id, req.body)
         .then(res => debug(`${res}`))
         // .then(animal => .save(animal))
-        .then(() => res.status(204))
+        .then(() => res.sendStatus(204))
         .catch(err => errorHandler(err, res));
 
         // .then(buffer => buffer.toString())
