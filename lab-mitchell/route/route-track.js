@@ -24,10 +24,6 @@ module.exports = function(router) {
     })
     .post(bodyParser, (req, res) => {
       debug(`${req.method}: ${req.url}`);
-
-      // let track = {req.body.title, req.body.artist} //if there's a bunch of stuff on request body you don't want and only want those two things
-      // let track = {};
-      // let {title, artist} = req.body;
       
       new Track(req.body).save() //creates new instance by passing in body of request, then saves it, will be validated that required key values exist and values are of right types
       //immediately save things to mongoDB, replaces the storage.create() method from last few labs

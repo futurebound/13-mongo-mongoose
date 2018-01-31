@@ -1,7 +1,7 @@
 'use strict';
 
 require('dotenv').config();
-require('./lib/server');
+require('./lib/server').start();
 
 
 // NO LONGER PASSING ENV VARS TO ENTRY POINT, PASSING DIRECTLY INTO SERVER.JS

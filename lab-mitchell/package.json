@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "start": "node index.js",
     "start:watch": "nodemon index.js",
     "start:debug": "DEBUG=http* nodemon index.js",
     "lint": "eslint .",
+    "lint:test": "npm run lint && npm test",
     "test": "jest -i",
-    "test:watch": "jest -i --watchall",
+    "test:watch": "jest -i --watchAll",
     "test:debug": "DEBUG=http* jest -i",
     "start-db": "mkdir -p ./data/db && mongod --dbpath ./data/db",
     "stop-db": "killall mongod"
