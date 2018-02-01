@@ -1,5 +1,5 @@
 {
-  "name": "13-demo-notes",
+  "name": "lab-mitchell",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,9 +19,6 @@
     "stop-db": "killall mongod"
   },
   "jest": {
-    "setupFiles": [
-      "./__test__/lib/jest-setup.js"
-    ],
     "verbose": true,
     "testEnvironment": "node",
     "collectCoverage": true,
