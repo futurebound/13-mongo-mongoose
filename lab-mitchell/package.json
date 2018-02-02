@@ -1,5 +1,5 @@
 {
-  "name": "lab-mitchell",
+  "name": "lab13-mitchell",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -42,6 +42,7 @@
     "debug": "^3.1.0",
     "dotenv": "^5.0.0",
     "eslint": "^4.16.0",
+    "faker": "^4.1.0",
     "jest": "^22.1.4"
   },
   "dependencies": {

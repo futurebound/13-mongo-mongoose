@@ -1,6 +1,6 @@
 'use strict';
 
-const errorHandler = require('../lib/error-handler');
+const errorHandler = require('../../lib/error-handler');
 require('jest');
 
 describe('#error-handler.js', function () {

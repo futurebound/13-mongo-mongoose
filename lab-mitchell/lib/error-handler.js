@@ -12,6 +12,7 @@ module.exports = function(err, res) { //error happened elsewhere, parse out erro
   case msg.includes('validation error'): return res.status(400).send(`${err.name}: ${err.message}`);
   case msg.includes('path error'): return res.status(404).send(`${err.name}: ${err.message}`);
   case msg.includes('enoent'): return res.status(404).send(`${err.name}: ${err.message}`);
+  case msg.includes('cast'): return res.status(400).send(`${err.name}: ${err.message}`);
 
   //says 'that ID DNE, can't return you that thing'
   case msg.includes('objectid failed'): return res.status(404).send(`${err.name}: ${err.message}`);

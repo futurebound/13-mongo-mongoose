@@ -33,8 +33,8 @@ server.start = () => { //will return these as promises
 
     server.http = app.listen(PORT, () => { //app.listen() takes PORT number and a callback
       console.log(`Listening on ${PORT}`);
+      mongoose.connect(MONGODB_URI); //shitload of things you can pass in here
       server.isOn = true;
-      server.db = mongoose.connect(MONGODB_URI); //shitload of things you can pass in here
       return resolve(server); //RETURNS THE FUCKING SERVER as a resolved promise, so can .then() and have access to server instance
     });
   });
@@ -47,7 +47,7 @@ server.stop = () => {
     server.http.close(() => {
       console.log('Shutting down server.');
       //disconnect DB connection
-      server.db.disconnect();
+      mongoose.disconnect();
       server.isOn = false;
       return resolve(server);
     });
