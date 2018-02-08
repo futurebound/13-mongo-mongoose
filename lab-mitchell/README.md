@@ -24,11 +24,11 @@ This file `error-handler.js` in the `lib/` directory exports a single anonymous 
 
 ## Credits and Collaborations
 [Body Parser Docs](https://www.npmjs.com/package/body-parser) ~ https://www.npmjs.com/package/body-parser
-[Cors Docs]() ~ 
+[Cors Docs](https://www.npmjs.com/package/cors) ~ https://www.npmjs.com/package/cors
 [Dotenv Docs](https://www.npmjs.com/package/dotenv) ~ https://www.npmjs.com/package/dotenv
-[Debug Docs]() ~ 
-[ESLint Docs]() ~ 
+[Debug Docs](https://www.npmjs.com/package/debug) ~ https://www.npmjs.com/package/debug
+[ESLint Docs](https://www.npmjs.com/package/eslint) ~ https://www.npmjs.com/package/eslint
 [Express Docs](http://expressjs.com/en/4x/api.html) ~ http://expressjs.com/en/4x/api.html
 [Jest Docs](https://facebook.github.io/jest/) ~ https://facebook.github.io/jest/
-[MongoDB]() ~ 
-[Mongoose Docs]() ~ 
+[MongoDB](https://docs.mongodb.com/) ~ https://docs.mongodb.com/
+[Mongoose Docs](http://mongoosejs.com/docs/guide.html) ~ http://mongoosejs.com/docs/guide.html
